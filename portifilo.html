@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <title>Hima's portfolio</title>
+  <title>
+  Hima's portfolio
+  </title>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       background-color: #d9e8ff;
@@ -11,7 +13,16 @@
       padding: 0;
       font-family: Arial, sans-serif;
       color: #222;
-    }
+	    animation: fadein 1.5s ease;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+html {
+  scroll-behavior: smooth;
+}
+
 
     .container {
       text-align: center;
@@ -36,7 +47,7 @@
     }
 
     p {
-      font-size: 50px;
+      font-size: 25px;
       line-height: 1.6;
       color: #555;
     }
@@ -49,8 +60,6 @@
       font-weight: bold;
       color: #1a73e8;
       padding-bottom: 20px;
-      /* لو عايز تضيف خلفية */
-      /* background-color: #e3f0ff; */
       border-radius: 12px;
     }
 
@@ -61,31 +70,174 @@
       box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
       transition: transform 0.3s ease;
       cursor: pointer;
-      display: block;      /* يخللي الصورة تبقى بلوك عشان نتحكم في المارجن */
-      margin: 0 auto;      /* يظبطها في النص */
+      display: block;
+      margin: 0 auto;
     }
 
     #cerf img:hover {
       transform: scale(1.05);
       box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
     }
+
+    .contact {
+      text-align: center;
+      margin-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    #cont {
+      font-size: 30px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .icons {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .icons li img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.2s ease;
+      border-radius: 10px;
+    }
+
+    .icons li img:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    a {
+      text-decoration:none;
+    }
+	#game{
+	color:red;
+	font-size:30px;
+	transition: all 0.3 ease-in-out;
+	 box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+	 border-radius:15px;
+	 margin: 10px;
+	 padding:10px;
+	 font-weight:bold;
+	 display:inline;
+	 cursor:pointer;
+	}
+	#game:hover {
+	color:red;
+	font-size:32px;
+	transform: scale(1.2) rotate(5deg);
+	box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
+	padding:5px;
+	margin:5px;
+	border-radius:30px;
+	}
   </style>
+  <link rel="icon" href="https://i.postimg.cc/qByY6PRx/portifilo.png" type="image/png">
 </head>
 <body>
   <div class="container">
-    <h1>Hima's portfolio</h1>
-    <h2>About me!</h2>
+    <h1>
+	<strong>Hima's portfolio</strong>
+	</h1>
+    <h2>
+	About me!
+	</h2>
     <p>
-      I'm literally a beginner web developer, but I got a certificate for completing the SoloLearn course. Scroll to see it. The SoloLearn course included:<br />
-      HTML, CSS, and JS
-    </p>
-  </div>
+	Im 14 Years Old for now,
+	<br>
+      I'm literally a beginner web developer, but I got a certificate for completing the SoloLearn course. Scroll to see it. The SoloLearn course included:<br>
+      <strong>HTML, CSS, and JS</strong>
+	  <br>
+	  I built a Roblox Game When I was 9 years old using Vibe coding and free models
+	  <br>
+	  <a href = "https://www.roblox.com/games/11822063524/Obby-Migo9Yt" 
+	  target = "_blank"
+	  id = "game">
+	 <strong> 
+	 Click Now!
+	 </strong>
+	  </a>
 
   <div id="cerf">
     Certificate:
-    <img src="https://i.postimg.cc/bv3xMs4y/certificate.png" alt="certificate" />
+    <img src="https://i.postimg.cc/bv3xMs4y/certificate.png" alt="certificate">	
   </div>
+
+  <div class="contact">
+    <h3 id="cont">Contact Me:</h3>
+    <ul class="icons">
+      <li class="facebook">
+        <a href="https://www.facebook.com/hima.progames" target="_blank" rel = "noopener noreferrer">
+          <img src="https://i.postimg.cc/PqMMN5BF/facebook.png" alt="facebook">
+        </a>
+      </li>
+      <li class="number">
+  <a href="tel:+201012105935" target = "_blank" rel="noopener noreferrer">
+  <img src="https://i.postimg.cc/G90DqWWy/call.png" alt="call"
+  onclick='alert("My phone number is +201012105935")'>
+</a>
+      </li>
+      <li class="email">
+        <a href="mailto:himagaming271@gmail.com"
+		target = "_blank" 
+		rel="noopener noreferrer"
+		>
+          <img src="https://i.postimg.cc/rm7hRm19/gmail.png" 
+		  alt="gmail" 
+		  onclick = 'alert("my email is himagaming271@gmail.com")'
+		  >
+        </a>
+      </li>
+	  <li class = "Sololearn">
+	  <a href ="https://www.sololearn.com/en/profile/33892731" target = "_blank" rel="noopener noreferrer">
+	  <img src = "https://i.postimg.cc/g2x9vfYD/Sololearn.png" alt = "SoloLearn profile">
+	  </a>
+	  </li>
+    </ul>
+  </div>
+<div class="container">
+  <h2> Write a New Diary Entry</h2>
+  <textarea id="diaryInput" rows="5" placeholder="Write what in ur heart here if u want!" style="width:100%; padding:10px; font-size:18px; border-radius:8px;"></textarea>
+  <br>
+  <button onclick="addDiary()" style=
+  "
+  padding:10px 20px; font-size:18px; background:#1a73e8; color:white; border:none; border-radius:8px; cursor:pointer;"
+  >
+  Add Entry
+  </button>
+
+  <div id="diaryOutput" style="margin-top:30px;"></div>
+</div>
+<script>
+  function addDiary() {
+    let input = document.getElementById("diaryInput").value;
+    if (input.trim() === "") {
+      alert("Bro you forgot to write anything in that fuck");
+      return;
+    }
+
+    let output = document.getElementById("diaryOutput");
+    let today = new Date().toLocaleDateString();
+    
+    let newEntry = `
+      <p style="background:#fff; padding:15px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+        <strong>${today}</strong><br>
+        ${input.replace(/\n/g, "<br>")}
+      </p>
+    `;
+
+    output.innerHTML = newEntry + output.innerHTML; 
+    document.getElementById("diaryInput").value = "";
+  }
+</script>
 </body>
 </html>
+
 
 

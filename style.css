@@ -43,7 +43,7 @@ html {
       color: #555;
     }
 
-    #cerf {
+    .cerfs {
       max-width: 700px;
       margin: 50px auto;
       text-align: center;
@@ -54,7 +54,7 @@ html {
       border-radius: 12px;
     }
 
-    #cerf img {
+    .cerfs img {
       width: 90%;
       max-width: 600px;
       border-radius: 15px;
@@ -65,7 +65,7 @@ html {
       margin: 0 auto;
     }
 
-    #cerf img:hover {
+    .cerfs img:hover {
       transform: scale(1.05);
       box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
     }

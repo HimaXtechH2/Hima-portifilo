@@ -121,7 +121,7 @@ html {
 	a {
 	  text-decoration:none;
 	}
-	#game{
+	.game{
 	color:red;
 	font-size:30px;
 	transition: all 2s ease-in-out;
@@ -133,7 +133,7 @@ html {
 	 display:inline;
 	 cursor:pointer;
 	}
-	#game:hover {
+	.game:hover {
 	color:red;
 	font-size:32px;
 	transform: scale(3) rotate(5deg);
@@ -144,8 +144,8 @@ html {
 	}
 	#end {
 	text-align:center;
-	font-size:30px;
-	color:black;
+	font-size:1.7rem;
+	color:ORANGE;
 position:fixed;
   padding: 10px 20px;
   border-radius: 10px;
@@ -153,85 +153,202 @@ position:fixed;
   left: 50%;
   transform: translateX(-50%);
   background:blur(10px);
-
-	
+  box-shadow:0 0 20px rgba(26, 115, 232, 0.4);
+  font-weight:bold;
+  cursor:default;
 	}
+#pro-jects ol a {
+	text-decoration:none;
+	  color: inherit;
+	  font-size:1.7rem;
+	  text-align:center;
+	  padding-right:15px;
+	  margin:10px;
+	  font-weight:bold;
+	}
+	#pro-jects ol {
+	list-style:none;
+	}
+	#pro-jects {
+		text-align:center;
+	font-size:1.7rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background:blur(10px);
+  box-shadow:0 0 20px rgba(26, 115, 232, 0.4);
+  font-weight:bold;
+  }
+	@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .game {
+    font-size: 22px;
+    transform: none !important;
+  }
+  .game:hover {
+    transform: scale(1.05) rotate(2deg);
+  }
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+#navbar nav ol {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 0;
+  list-style: none;
+  margin: 0;
+}
+
+#navbar nav ol li {
+  transition: transform 0.2s ease;
+}
+
+#navbar nav ol li:hover {
+  transform: scale(1.2);
+}
+
+#navbar nav ol li a img {
+  width: 50px;
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(26, 115, 232, 0.4);
+  transition: all 0.2s ease;
+}
+
+#navbar nav ol li a img:hover {
+  box-shadow: 0 0 20px rgba(26, 115, 232, 0.7);
+}
+
   </style>
   <link rel="icon" href="https://i.postimg.cc/qByY6PRx/portifilo.png" type="image/png">
 </head>
 <body>
-  <div id="container">
-	<h1>
+<div id="container">
+
+  <section id="About">
+    <h1>
 	<strong>
 	Hima's portfolio
 	</strong>
 	</h1>
-	<h2>
+    <h2>
 	About me!
 	</h2>
-	<p>
-	Im 14 Years Old for now,
-	<br>
-	  I'm literally a beginner web developer, but I got a certificate for completing the SoloLearn course. 
-	  <br>
-	  Scroll to see it. 
-	  <br>
-	  The SoloLearn course included:
-	  <br>
-	  <strong>HTML, CSS, and JS</strong>
-	  <br>
-	  I built a Roblox Game When I was 9 years old using Vibe coding and free models
-	  <br>
-	  <a href = "https://www.roblox.com/games/11822063524/Obby-Migo9Yt" 
-	  target = "_blank"
-	  id = "game">
-	 <strong> 
-	 Click Now!
-	 </strong>
-	  </a>
+    <p>
+      Im 14 Years Old for now,
+      <br>
+      I'm literally a beginner web developer, but I got a certificate for completing the SoloLearn course. 
+      <br>
+	  Scroll to see it.
+      <br>
+      The SoloLearn course included:
+      <br>
+	  <strong>
+	  HTML, CSS, and JS
+	  </strong>
+      <br>
+      I built a Roblox Game When I was 9 years old using Vibe coding and free models
+      <br>
+      <a href="https://www.roblox.com/games/11822063524/Obby-Migo9Yt" target="_blank" class="game">
+        <strong>Click Now!</strong>
+      </a>
+    </p>
+  </section>
 
-  <div id = "cerfs">
-	Certificates:
-	  <ul>
-		  <li>
-	<img src="https://i.postimg.cc/bv3xMs4y/certificate.png" alt="certificate">	
-		  </li>
-		  <li>
-		<img src = "https://i.postimg.cc/C1yZrTZY/IMG-3592.jpg" alt = "Java script intermediate certificate">
-		  </li>
-	  </ul>
-  </div>
+  <section id="pro-jects">
+    <h2>Projects:</h2>
+    <ol>
+      <li>
+        <a href="https://himaxtechh2.github.io/calculator/" class = "calc">
+          Simple number calculator
+        </a>
+      </li>
+    </ol>
+  </section>
 
-  <div class="contact">
-	<h3 id="cont">Contact Me:</h3>
-	<ul class="icons">
-	  <li class="facebook">
-		<a href="https://www.facebook.com/hima.progames" target="_blank" rel = "noopener noreferrer">
-		  <img src="https://i.postimg.cc/PqMMN5BF/facebook.png" alt="facebook">
-		</a>
+  <section id="cerfs">
+    Certificates:
+    <ul>
+      <li>
+	  <img src="https://i.postimg.cc/bv3xMs4y/certificate.png" alt="certificate">
 	  </li>
-	  <li class="email">
-		<a href="mailto:himagaming271@gmail.com"
-		target = "_blank" 
-		rel="noopener noreferrer"
-		>
-		  <img src="https://i.postimg.cc/rm7hRm19/gmail.png" 
-		  alt="gmail" 
-		  onclick = 'alert("my email is himagaming271@gmail.com")'
-		  >
-		</a>
+      <li>
+	  <img src="https://i.postimg.cc/C1yZrTZY/IMG-3592.jpg" alt="Java script intermediate certificate">
 	  </li>
-	  <li class = "Sololearn">
-	  <a href ="https://www.sololearn.com/en/profile/33892731" target = "_blank" rel="noopener noreferrer">
-	  <img src = "https://i.postimg.cc/g2x9vfYD/Sololearn.png" alt = "SoloLearn profile">
-	  </a>
-	  </li>
-	</ul>
-  </div>
-<section id = "end">
-<footer>
-&copy 2025 Ibrahim Hany. All rights reserved
-</footer>
+    </ul>
+  </section>
+</div> 
+
+  <section id="call" class="contact">
+    <h3 id="cont">
+	Contact Me:
+	</h3>
+    <ul class="icons">
+      <li>
+        <a href="https://www.facebook.com/hima.progames" target="_blank" rel="noopener noreferrer">
+          <img src="https://i.postimg.cc/PqMMN5BF/facebook.png" alt="facebook">
+        </a>
+      </li>
+      <li>
+        <a href="mailto:himagaming271@gmail.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://i.postimg.cc/rm7hRm19/gmail.png" alt="gmail" onclick='alert("my email is himagaming271@gmail.com")'>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.sololearn.com/en/profile/33892731" target="_blank" rel="noopener noreferrer">
+          <img src="https://i.postimg.cc/g2x9vfYD/Sololearn.png" alt="SoloLearn profile">
+        </a>
+      </li>
+    </ul>
+  </section>
+
+<section id="end">
+  <footer>
+    &copy; 2025 Ibrahim Hany. All rights reserved
+  </footer>
 </section>
+
+<div id="navbar">
+  <nav>
+    <ol>
+      <li>
+        <a href="#About">
+          <img src="https://i.postimg.cc/B6y1ChnG/que.png" alt="about">
+        </a>
+      </li>
+      <li>
+        <a href="#cerfs">
+          <img src="https://i.postimg.cc/QMdStx4Y/certificate-icon.png" alt="certificates">
+        </a>
+      </li>
+	  <li>
+	  <a href = "#pro-jects">
+	  <img src = "https://i.postimg.cc/gJdk9jYj/project-icon.png">
+	  </a>
+	  </li>
+	  <li>
+	  <a href = "#call">
+	  <img src ="https://i.postimg.cc/pdQRBvDH/contact-icon.png">
+	 </a> 
+	 </li>
+    </ol>
+  </nav>
+</div>
 </body>
 </html>

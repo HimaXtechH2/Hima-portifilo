@@ -4,7 +4,7 @@
   <title>
   Hima's portfolio
   </title>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
 	body {
@@ -26,13 +26,12 @@ html {
 }
 
 
-	.container {
+	#container {
 	  text-align: center;
 	  padding: 30px 20px;
 	  max-width: 700px;
 	  margin: 40px auto;
 	  background:transparent;
-	  border-radius: 12px;
 	}
 
 	h1 {
@@ -48,13 +47,13 @@ html {
 	}
 
 	p {
-	  font-size: 26px;
+	  font-size: 27px;
 		font-weight:bold;
 	  line-height: 1.6;
 	  color: #555;
 	}
 
-	.cerfs {
+	#cerfs {
 	  max-width: 700px;
 	  margin: 50px auto;
 	  text-align: center;
@@ -65,7 +64,7 @@ html {
 	  border-radius: 12px;
 	}
 
-	.cerfs img {
+	#cerfs img {
 	  width: 90%;
 	  max-width: 600px;
 	  border-radius: 15px;
@@ -76,11 +75,11 @@ html {
 	  margin: 0 auto;
 	}
 
-	.cerfs img:hover {
+	#cerfs img:hover {
 	  transform: scale(1.05);
 	  box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
 	}
-	  .cerfs ul {
+	  #cerfs ul {
 		  list-style:none;
 		  padding:0px;
 		  }
@@ -133,12 +132,7 @@ html {
 	 font-weight:bold;
 	 display:inline;
 	 cursor:pointer;
-	 animation: fadein 4s ease;
 	}
-	@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
 	#game:hover {
 	color:red;
 	font-size:32px;
@@ -148,18 +142,29 @@ html {
 	margin:5px;
 	border-radius:30px;
 	}
-	.end {
+	#end {
 	text-align:center;
-	font-size:25px;
-	color:#291b18;
+	font-size:30px;
+	color:black;
+position:fixed;
+  padding: 10px 20px;
+  border-radius: 10px;
+    bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background:blur(10px);
+
+	
 	}
   </style>
   <link rel="icon" href="https://i.postimg.cc/qByY6PRx/portifilo.png" type="image/png">
 </head>
 <body>
-  <div class="container">
+  <div id="container">
 	<h1>
-	<strong>Hima's portfolio</strong>
+	<strong>
+	Hima's portfolio
+	</strong>
 	</h1>
 	<h2>
 	About me!
@@ -168,7 +173,11 @@ html {
 	Im 14 Years Old for now,
 	<br>
 	  I'm literally a beginner web developer, but I got a certificate for completing the SoloLearn course. 
-			<br>Scroll to see it. <br>The SoloLearn course included:<br>
+	  <br>
+	  Scroll to see it. 
+	  <br>
+	  The SoloLearn course included:
+	  <br>
 	  <strong>HTML, CSS, and JS</strong>
 	  <br>
 	  I built a Roblox Game When I was 9 years old using Vibe coding and free models
@@ -181,7 +190,7 @@ html {
 	 </strong>
 	  </a>
 
-  <div class = "cerfs">
+  <div id = "cerfs">
 	Certificates:
 	  <ul>
 		  <li>
@@ -219,12 +228,10 @@ html {
 	  </li>
 	</ul>
   </div>
-<section class = "end">
+<section id = "end">
 <footer>
-© 2025 Ibrahim Hany. All rights reserved
+&copy 2025 Ibrahim Hany. All rights reserved
 </footer>
 </section>
 </body>
 </html>
-
-

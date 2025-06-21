@@ -2,353 +2,384 @@
 <html lang="en" dir="ltr">
 <head>
   <title>
-  Hima's portfolio
+  Hima's Portfolio
   </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://i.postimg.cc/qByY6PRx/portifilo.png" type="image/png">
   <style>
-	body {
-	  margin: 0;
-	  padding: 0;
-	  font-family: Arial, sans-serif;
-	  color: #222;
-background:url("https://i.postimg.cc/FR3bwWW5/pexels-padrinan-19670.png") no-repeat;
-	  background-size:cover;
-	  background-position:center;
-		animation: fadein 4s ease;
-}
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-html {
-  scroll-behavior: smooth;
-}
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: url("https://i.postimg.cc/FR3bwWW5/pexels-padrinan-19670.png") no-repeat center center;
+      background-size: cover;
+      animation: fadein 4s ease;
+    }
 
+    @keyframes fadein {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
 
-	#container {
-	  text-align: center;
-	  padding: 30px 20px;
-	  max-width: 700px;
-	  margin: 40px auto;
-	  background:transparent;
-	}
+    html {
+      scroll-behavior: smooth;
+    }
 
-	h1 {
-	  font-size: 48px;
-	  margin-bottom: 10px;
-	  color: #1a73e8;
-	}
+    #container {
+      text-align: center;
+      padding: 30px 20px;
+      max-width: 700px;
+      margin: 40px auto;
+      background: transparent;
+      width: 90%;
+    }
 
-	h2 {
-	  font-size: 40px;
-	  margin-bottom: 20px;
-	  color: #333;
-	}
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #1a73e8;
+    }
 
-	p {
-	  font-size: 27px;
-		font-weight:bold;
-	  line-height: 1.6;
-	  color: #555;
-	}
+    h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: #333;
+    }
 
-	#cerfs {
-	  max-width: 700px;
-	  margin: 50px auto;
-	  text-align: center;
-	  font-size: 35px;
-	  font-weight: bold;
-	  color: #1a73e8;
-	  padding-bottom: 20px;
-	  border-radius: 12px;
-	}
+    p {
+      font-size: 27px;
+      font-weight: bold;
+      line-height: 1.6;
+      color: #555;
+    }
 
-	#cerfs img {
-	  width: 90%;
-	  max-width: 600px;
-	  border-radius: 15px;
-	  box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
-	  transition: transform 0.3s ease;
-	  cursor: pointer;
-	  display: block;
-	  margin: 0 auto;
-	}
+    #cerfs {
+      max-width: 700px;
+      margin: 50px auto;
+      text-align: center;
+      font-size: 35px;
+      font-weight: bold;
+      color: #1a73e8;
+      padding-bottom: 20px;
+      border-radius: 12px;
+    }
 
-	#cerfs img:hover {
-	  transform: scale(1.05);
-	  box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
-	}
-	  #cerfs ul {
-		  list-style:none;
-		  padding:0px;
-		  }
+    #cerfs img {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
 
-	.contact {
-	  text-align: center;
-	  margin-top: 40px;
-	  padding-bottom: 40px;
-	}
+    #cerfs img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
+    }
 
-	#cont {
-	  font-size: 30px;
-	  font-family: Arial, sans-serif;
-	  font-weight: bold;
-	  margin-bottom: 20px;
-	}
+    #cerfs ul {
+      list-style: none;
+      padding: 0px;
+    }
 
-	.icons {
-	  list-style: none;
-	  display: flex;
-	  justify-content: center;
-	  gap: 20px;
-	  padding: 0;
-	  margin: 0;
-	}
+    .contact {
+      text-align: center;
+      margin-top: 40px;
+      padding-bottom: 40px;
+    }
 
-	.icons li img {
-	  width: 40px;
-	  height: 40px;
-	  transition: transform 0.2s ease;
-	  border-radius: 10px;
-	}
+    #cont {
+      font-size: 30px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
 
-	.icons li img:hover {
-	  transform: scale(1.2);
-	  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-	}
+    .icons {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
 
-	a {
-	  text-decoration:none;
-	}
-	.game{
-	color:red;
-	font-size:30px;
-	transition: all 2s ease-in-out;
-	 box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
-	 border-radius:15px;
-	 margin: 10px;
-	 padding:10px;
-	 font-weight:bold;
-	 display:inline;
-	 cursor:pointer;
-	}
-	.game:hover {
-	color:red;
-	font-size:32px;
-	transform: scale(3) rotate(5deg);
-	box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
-	padding:5px;
-	margin:5px;
-	border-radius:30px;
-	}
-	#end {
-	text-align:center;
-	font-size:1.7rem;
-	color:ORANGE;
-position:fixed;
-  padding: 10px 20px;
-  border-radius: 10px;
-    bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background:blur(10px);
-  box-shadow:0 0 20px rgba(26, 115, 232, 0.4);
-  font-weight:bold;
-  cursor:default;
-	}
-#pro-jects ol a {
-	text-decoration:none;
-	  color: inherit;
-	  font-size:1.7rem;
-	  text-align:center;
-	  padding-right:15px;
-	  margin:10px;
-	  font-weight:bold;
-	}
-	#pro-jects ol {
-	list-style:none;
-	}
-	#pro-jects {
-		text-align:center;
-	font-size:1.7rem;
-  padding: 10px 20px;
-  border-radius: 10px;
-  background:blur(10px);
-  box-shadow:0 0 20px rgba(26, 115, 232, 0.4);
-  font-weight:bold;
-  }
-	@media (max-width: 600px) {
-  h1 {
-    font-size: 32px;
-  }
-  h2 {
-    font-size: 26px;
-  }
-  p {
-    font-size: 18px;
-  }
-  .game {
-    font-size: 22px;
-    transform: none !important;
-  }
-  .game:hover {
-    transform: scale(1.05) rotate(2deg);
-  }
-}
-#navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  z-index: 999;
-}
+    .icons li img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.2s ease;
+      border-radius: 10px;
+    }
 
-#navbar nav ol {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 10px 0;
-  list-style: none;
-  margin: 0;
-}
+    .icons li img:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
 
-#navbar nav ol li {
-  transition: transform 0.2s ease;
-}
+    a {
+      text-decoration: none;
+    }
 
-#navbar nav ol li:hover {
-  transform: scale(1.2);
-}
+    .game {
+      color: red;
+      font-size: 30px;
+      transition: all 2s ease-in-out;
+      box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+      border-radius: 15px;
+      margin: 10px;
+      padding: 10px;
+      font-weight: bold;
+      display: inline;
+      cursor: pointer;
+    }
 
-#navbar nav ol li a img {
-  width: 50px;
+    .game:hover {
+      transform: scale(1.5) rotate(5deg);
+      box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
+      padding: 5px;
+      margin: 5px;
+      border-radius: 30px;
+    }
 
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(26, 115, 232, 0.4);
-  transition: all 0.2s ease;
-}
+    #end {
+      text-align: center;
+      font-size: 1.2rem;
+      color: ORANGE;
+      position: fixed;
+      padding: 10px 20px;
+      border-radius: 10px;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+      font-weight: bold;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+    }
 
-#navbar nav ol li a img:hover {
-  box-shadow: 0 0 20px rgba(26, 115, 232, 0.7);
-}
+    #pro-jects ol {
+      list-style: none;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+    }
+
+    #pro-jects ol a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 1.5rem;
+      border-radius: 15px;
+      padding: 10px;
+      margin: 10px;
+      font-weight: bold;
+      transition: all 2s ease-in-out;
+      box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    #pro-jects ol a:hover {
+      transform: scale(1.1) rotate(3deg);
+      box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
+      padding: 5px;
+      margin: 5px;
+      border-radius: 21px;
+    }
+
+    #pro-jects {
+      text-align: center;
+      font-size: 1rem;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+      font-weight: bold;
+    }
+
+    #navbar {
+      border-radius: 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
+
+    #navbar nav ol {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+      list-style: none;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
+    #navbar nav ol li {
+      transition: transform 0.2s ease;
+    }
+
+    #navbar nav ol li:hover {
+      transform: scale(1.2);
+    }
+
+    #navbar nav ol li a img {
+      width: 40px;
+      height: 35px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(26, 115, 232, 0.4);
+      transition: all 0.2s ease;
+    }
+
+    #navbar nav ol li a img:hover {
+      box-shadow: 0 0 20px rgba(26, 115, 232, 0.7);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+      h2 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 18px;
+      }
+      .game {
+        font-size: 22px;
+      }
+      .game:hover {
+        transform: scale(1.1) rotate(2deg);
+      }
+      .icons li img {
+        width: 30px;
+        height: 30px;
+      }
+      #navbar nav ol li a img {
+        width: 30px;
+        height: 30px;
+      }
+    }
 
   </style>
-  <link rel="icon" href="https://i.postimg.cc/qByY6PRx/portifilo.png" type="image/png">
 </head>
 <body>
-<div id="container">
 
-  <section id="About">
-    <h1>
-	<strong>
-	Hima's portfolio
-	</strong>
-	</h1>
-    <h2>
-	About me!
-	</h2>
-    <p>
-      Im 14 Years Old for now,
-      <br>
-      I'm literally a beginner web developer, but I got a certificate for completing the SoloLearn course. 
-      <br>
-	  Scroll to see it.
-      <br>
-      The SoloLearn course included:
-      <br>
+  <div id="container">
+    <section id="About">
+      <h1>
 	  <strong>
-	  HTML, CSS, and JS
+	  Hima's portfolio
 	  </strong>
-      <br>
-      I built a Roblox Game When I was 9 years old using Vibe coding and free models
-      <br>
-      <a href="https://www.roblox.com/games/11822063524/Obby-Migo9Yt" target="_blank" class="game">
-        <strong>Click Now!</strong>
-      </a>
-    </p>
+	  </h1>
+      <h2>
+	  About me!
+	  </h2>
+      <p>
+        I'm 14 Years Old for now,
+        <br>
+        I'm literally a beginner web developer, but I got a certificate for completing the SoloLearn course.
+        <br>
+        Scroll to see it.
+        <br>
+        The SoloLearn course included:
+        <br>
+		<strong>
+		HTML, CSS, and JS
+		</strong>
+        <br>
+        I built a Roblox Game When I was 9 years old using Vibe coding and free models
+        <br>
+        <a href="https://www.roblox.com/games/11822063524/Obby-Migo9Yt" target="_blank" class="game"><strong>Click Now!</strong></a>
+      </p>
+    </section>
+
+    <section id="pro-jects">
+      <h2>Projects:</h2>
+      <ol>
+        <li>
+          <a href="https://himaxtechh2.github.io/calculator/" class="calc">
+            Simple number calculator
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <section id="cerfs">
+      Certificates:
+      <ul>
+        <li>
+		<img src="https://i.postimg.cc/bv3xMs4y/certificate.png" alt="certificate">
+		</li>
+        <li>
+		<img src="https://i.postimg.cc/C1yZrTZY/IMG-3592.jpg" alt="JavaScript Intermediate Certificate">
+		</li>
+      </ul>
+    </section>
+
+    <section id="call" class="contact">
+      <h3 id="cont">
+	  Contact Me:
+	  </h3>
+      <ul class="icons">
+        <li>
+		<a href="https://www.facebook.com/hima.progames" target="_blank"><img src="https://i.postimg.cc/PqMMN5BF/facebook.png" alt="Facebook">
+		</a>
+		</li>
+        <li>
+		<a href="mailto:himagaming271@gmail.com" target="_blank"><img src="https://i.postimg.cc/rm7hRm19/gmail.png" alt="Gmail">
+		</a>
+		</li>
+        <li>
+		<a href="https://www.sololearn.com/en/profile/33892731" target="_blank">
+		<img src="https://i.postimg.cc/g2x9vfYD/Sololearn.png" alt="SoloLearn">
+		</a>
+		</li>
+      </ul>
+    </section>
+  </div>
+
+  <section id="end">
+    <footer>
+	&copy; 2025 Ibrahim Hany. All rights reserved
+	</footer>
   </section>
 
-  <section id="pro-jects">
-    <h2>Projects:</h2>
-    <ol>
-      <li>
-        <a href="https://himaxtechh2.github.io/calculator/" class = "calc">
-          Simple number calculator
-        </a>
-      </li>
-    </ol>
-  </section>
+  <div id="navbar">
+    <nav>
+      <ol>
+        <li>
+		<a href="#About">
+		<img src="https://i.postimg.cc/B6y1ChnG/que.png" alt="about">
+		</a>
+		</li>
+        <li>
+		<a href="#cerfs">
+		<img src="https://i.postimg.cc/QMdStx4Y/certificate-icon.png" alt="certificates">
+		</a>
+		</li>
+        <li>
+		<a href="#pro-jects">
+		<img src="https://i.postimg.cc/gJdk9jYj/project-icon.png" alt="projects">
+		</a>
+		</li>
+        <li>
+		<a href="#call">
+		<img src="https://i.postimg.cc/pdQRBvDH/contact-icon.png" alt="contact">
+		</a>
+		</li>
+      </ol>
+    </nav>
+  </div>
 
-  <section id="cerfs">
-    Certificates:
-    <ul>
-      <li>
-	  <img src="https://i.postimg.cc/bv3xMs4y/certificate.png" alt="certificate">
-	  </li>
-      <li>
-	  <img src="https://i.postimg.cc/C1yZrTZY/IMG-3592.jpg" alt="Java script intermediate certificate">
-	  </li>
-    </ul>
-  </section>
-</div> 
-
-  <section id="call" class="contact">
-    <h3 id="cont">
-	Contact Me:
-	</h3>
-    <ul class="icons">
-      <li>
-        <a href="https://www.facebook.com/hima.progames" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.postimg.cc/PqMMN5BF/facebook.png" alt="facebook">
-        </a>
-      </li>
-      <li>
-        <a href="mailto:himagaming271@gmail.com" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.postimg.cc/rm7hRm19/gmail.png" alt="gmail" onclick='alert("my email is himagaming271@gmail.com")'>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.sololearn.com/en/profile/33892731" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.postimg.cc/g2x9vfYD/Sololearn.png" alt="SoloLearn profile">
-        </a>
-      </li>
-    </ul>
-  </section>
-
-<section id="end">
-  <footer>
-    &copy; 2025 Ibrahim Hany. All rights reserved
-  </footer>
-</section>
-
-<div id="navbar">
-  <nav>
-    <ol>
-      <li>
-        <a href="#About">
-          <img src="https://i.postimg.cc/B6y1ChnG/que.png" alt="about">
-        </a>
-      </li>
-      <li>
-        <a href="#cerfs">
-          <img src="https://i.postimg.cc/QMdStx4Y/certificate-icon.png" alt="certificates">
-        </a>
-      </li>
-	  <li>
-	  <a href = "#pro-jects">
-	  <img src = "https://i.postimg.cc/gJdk9jYj/project-icon.png">
-	  </a>
-	  </li>
-	  <li>
-	  <a href = "#call">
-	  <img src ="https://i.postimg.cc/pdQRBvDH/contact-icon.png">
-	 </a> 
-	 </li>
-    </ol>
-  </nav>
-</div>
 </body>
 </html>

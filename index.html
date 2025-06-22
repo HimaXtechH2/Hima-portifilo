@@ -13,7 +13,8 @@
       padding: 0;
       font-family: Arial, sans-serif;
       color: #222;
-      background: url("https://i.postimg.cc/FR3bwWW5/pexels-padrinan-19670.png") no-repeat center center;
+      background: url("https://i.postimg.cc/FR3bwWW5/pexels-padrinan-19670.png") no-repeat fixed;
+	  background-position:center;
       background-size: cover;
       animation: fadein 4s ease;
     }
@@ -349,6 +350,67 @@ body.dark-theme {
   backdrop-filter: blur(10px);
   color: white;
 }
+.Soon {
+font-size:1.5rem;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .game {
+    font-size: 24px;
+  }
+  .icons li img,
+  #navbar nav ol li a img {
+    width: 35px;
+    height: 35px;
+  }
+  .Soon {
+    font-size: 1.2rem;
+  }
+  #end {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .game {
+    font-size: 18px;
+  }
+  .icons li img,
+  #navbar nav ol li a img {
+    width: 28px;
+    height: 28px;
+  }
+  .Soon {
+    font-size: 1rem;
+  }
+  #end {
+    font-size: 0.9rem;
+    bottom: 20px;
+  }
+  #cerfs img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 
   </style>
 </head>
@@ -392,6 +454,11 @@ body.dark-theme {
             Simple number calculator
           </a>
         </li>
+		<li>
+		<em class = "Soon">
+		New projects Soon...
+		</em>
+		</li>
       </ol>
     </section>
 
